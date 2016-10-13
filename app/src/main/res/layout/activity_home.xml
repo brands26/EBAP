@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.beliautopart.beliautopart.activity.LayoutingActivity"
+    android:background="@drawable/app_background">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/include"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout13">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Selamat Datang, Brandon"
+                android:id="@+id/txtNama"
+                android:textSize="@dimen/_15sdp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:textAlignment="center"
+                android:layout_marginBottom="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relativeLayout13"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentEnd="false"
+                android:id="@+id/buttonTentangBackgroun"
+                android:background="@drawable/satellite"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="@dimen/_48sdp"
+                android:id="@+id/imageButton"
+                android:background="#00FFFFFF"
+                android:src="@drawable/tentang"
+                android:onClick="onAboutClick"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Tentang Kami"
+                android:id="@+id/textView33"
+                android:textSize="@dimen/_13sdp"
+                android:textAlignment="center"
+                android:layout_alignStart="@+id/buttonTentangBackgroun"
+                android:layout_alignEnd="@+id/buttonTentangBackgroun"
+                android:layout_below="@+id/buttonTentangBackgroun"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:background="@drawable/satellite"
+                android:id="@+id/buttonPartMobilBackgroun"
+                android:layout_above="@+id/centerB"
+                android:layout_marginLeft="@dimen/_25sdp"></RelativeLayout>
+
+            <ImageView
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="@dimen/_48sdp"
+                android:id="@+id/imageButton5"
+                android:src="@drawable/mobil"
+                android:onClick="onSearchPartMobilClick"
+                android:layout_alignParentTop="false"
+                android:layout_marginLeft="@dimen/_51sdp"
+                android:background="#00FFFFFF"
+                android:layout_marginBottom="@dimen/_26sdp"
+                android:layout_above="@+id/centerB" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:id="@+id/buttonPartMotorBackgroun"
+                android:background="@drawable/satellite"
+                android:layout_alignTop="@+id/buttonPartMobilBackgroun"
+                android:layout_above="@+id/centerB"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:layout_alignParentRight="true"></RelativeLayout>
+
+            <ImageView
+                android:layout_width="@dimen/_46sdp"
+                android:layout_height="@dimen/_46sdp"
+                android:id="@+id/imageButton6"
+                android:src="@drawable/motor"
+                android:onClick="onSearchPartMotorClick"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="false"
+                android:layout_marginRight="@dimen/_52sdp"
+                android:background="#00FFFFFF"
+                android:layout_marginBottom="@dimen/_26sdp"
+                android:layout_above="@+id/centerB" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentEnd="false"
+                android:id="@+id/buttonBengkelBackgroun"
+                android:background="@drawable/satellite"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="true"
+                android:layout_above="@+id/textView42"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="@dimen/_48sdp"
+                android:id="@+id/imageButton7"
+                android:background="#00FFFFFF"
+                android:src="@drawable/bengkel"
+                android:nestedScrollingEnabled="false"
+                android:onClick="onBengkelClick"
+                android:layout_above="@+id/textView42"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="@dimen/_36sdp"
+                android:layout_marginBottom="@dimen/_26sdp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:id="@+id/buttonHiburanBackgroun"
+                android:background="@drawable/satellite"
+                android:layout_below="@+id/centerB"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:id="@+id/imageButton13"
+                android:background="#00FFFFFF"
+                android:src="@drawable/hiburan"
+                android:onClick="onHiburanClick"
+                android:layout_alignParentBottom="false"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_below="@+id/centerB" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Mobil"
+                android:id="@+id/textView39"
+                android:textAlignment="center"
+                android:textSize="@dimen/_13sdp"
+                android:layout_below="@+id/buttonPartMobilBackgroun"
+                android:layout_alignLeft="@+id/buttonPartMobilBackgroun"
+                android:layout_alignStart="@+id/buttonPartMobilBackgroun"
+                android:layout_alignRight="@+id/buttonPartMobilBackgroun"
+                android:layout_alignEnd="@+id/buttonPartMobilBackgroun" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Motor"
+                android:id="@+id/textView40"
+                android:layout_alignTop="@+id/textView39"
+                android:textAlignment="center"
+                android:textSize="@dimen/_13sdp"
+                android:layout_alignRight="@+id/buttonPartMotorBackgroun"
+                android:layout_alignEnd="@+id/buttonPartMotorBackgroun"
+                android:layout_toEndOf="@+id/textView33"
+                android:layout_alignLeft="@+id/buttonPartMotorBackgroun"
+                android:layout_alignStart="@+id/buttonPartMotorBackgroun" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Bengkel"
+                android:id="@+id/textView42"
+                android:textAlignment="center"
+                android:textSize="@dimen/_13sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/buttonBengkelBackgroun"
+                android:layout_alignStart="@+id/buttonBengkelBackgroun"
+                android:layout_alignRight="@+id/buttonBengkelBackgroun"
+                android:layout_alignEnd="@+id/buttonBengkelBackgroun"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Hiburan"
+                android:id="@+id/textView43"
+                android:textAlignment="center"
+                android:textSize="@dimen/_13sdp"
+                android:layout_alignLeft="@+id/buttonHiburanBackgroun"
+                android:layout_alignStart="@+id/buttonHiburanBackgroun"
+                android:layout_alignRight="@+id/buttonHiburanBackgroun"
+                android:layout_alignEnd="@+id/buttonHiburanBackgroun"
+                android:layout_alignParentBottom="false"
+                android:layout_marginBottom="@dimen/_25sdp"
+                android:layout_below="@+id/buttonHiburanBackgroun" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_alignParentTop="false"
+                android:layout_centerInParent="true"
+                android:id="@+id/centerB"
+                android:layout_marginTop="@dimen/_10sdp"></RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <include layout="@layout/bottom_navigation"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/include"
+        android:layout_width="match_parent" />
+</RelativeLayout>
